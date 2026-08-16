@@ -6,7 +6,7 @@ Base repo: https://github.com/slvDev/esp32-ai
 
 ## Week 1 rule
 
-No code. No cloning. No accounts. Everyone reads the fundamentals first, keeps a reading log, and makes one small deliverable. Repo work starts in week 2.
+No repo work this week. Everyone reads the fundamentals first, keeps a reading log, and builds one hands-on artifact: a small script, a diagram, a quiz, or a browser demo. Tiny scripts and browser tools are fine. No accounts needed.
 
 ## Repo contents
 
@@ -14,26 +14,26 @@ One file per member. Each file holds that member's week 1 task.
 
 | File | Track | Task |
 |---|---|---|
-| 01_R1.md | ML research | Big picture explainer |
-| 02_R2.md | ML research | Glossary of 20 terms |
+| 01_R1.md | ML research | Pipeline diagram and video |
+| 02_R2.md | ML research | Flashcards quiz |
 | 03_R3.md | ML research | Tokenization hands-on |
-| 04_R4.md | ML research | Loss and perplexity |
-| 05_R5.md | ML research | Why quantize |
-| 06_H1.md | ML + embedded | Model to device flow |
-| 07_H2.md | ML + embedded | Memory tiers |
-| 08_H3.md | ML + embedded | The model file |
-| 09_H4.md | ML + embedded | What tok/s means |
-| 10_H5.md | ML + embedded | Inside the runtime |
-| 11_E1.md | Embedded | The board |
-| 12_E2.md | Embedded | Firmware 101 |
+| 04_R4.md | ML research | Perplexity calculation |
+| 05_R5.md | ML research | Quantization toy script |
+| 06_H1.md | ML + embedded | Model to device diagram |
+| 07_H2.md | ML + embedded | Memory poster |
+| 08_H3.md | ML + embedded | 4-bit packing script |
+| 09_H4.md | ML + embedded | Speed simulation |
+| 10_H5.md | ML + embedded | Runtime simulator |
+| 11_E1.md | Embedded | Wokwi board run |
+| 12_E2.md | Embedded | Firmware edit in Wokwi |
 
 ## How to use
 
 Every task file has the same shape, three parts, one week.
 
 1. Part 1: read the given links in order. For each source, log what it is, 3 things you learned, and 1 question you still have.
-2. Part 2: make your deliverable. One small file per member, with real numbers from the repo where they exist.
-3. Part 3: meetup teach-back. 5 minutes, then 2 questions from the lead.
+2. Part 2: build your artifact. One small script, diagram, quiz, or demo per member, with real numbers from the repo where they exist.
+3. Part 3: meetup demo. 5 minutes, then 2 questions from the lead.
 
 The evidence checklist at the end of your file is what closes your issue. Write everything yourself. The meetup questions will show the difference.
 
