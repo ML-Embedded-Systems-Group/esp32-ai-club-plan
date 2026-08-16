@@ -14,26 +14,27 @@ One file per member. Each file holds that member's week 1 task.
 
 | File | Track | Task |
 |---|---|---|
-| 01_R1.md | ML research | Pipeline diagram and script |
-| 02_R2.md | ML research | Flashcards quiz |
-| 03_R3.md | ML research | Tokenization hands-on |
-| 04_R4.md | ML research | Perplexity calculation |
-| 05_R5.md | ML research | Quantization toy script |
-| 06_H1.md | ML + embedded | Flow diagram and script |
-| 07_H2.md | ML + embedded | Memory poster |
-| 08_H3.md | ML + embedded | 4-bit packing script |
-| 09_H4.md | ML + embedded | Speed simulation |
-| 10_H5.md | ML + embedded | Runtime simulator |
+| 01_R1.md | ML research | Pipeline script + compression maths |
+| 02_R2.md | ML research | Flashcards + glossary doc |
+| 03_R3.md | ML research | BPE merge code + vocab maths |
+| 04_R4.md | ML research | Perplexity code + hand maths |
+| 05_R5.md | ML research | Quantize code + bits maths |
+| 06_H1.md | ML + embedded | Flow sim + memory maths |
+| 07_H2.md | ML + embedded | Memory scale code + poster |
+| 08_H3.md | ML + embedded | Pack code + byte maths |
+| 09_H4.md | ML + embedded | Speed sim + timing maths |
+| 10_H5.md | ML + embedded | Runtime sim + speed maths |
 | 11_E1.md | Embedded | Wokwi board run |
-| 12_E2.md | Embedded | Firmware edit in Wokwi |
+| 12_E2.md | Embedded | Wokwi firmware edit |
 
 ## How to use
 
-Every task file has the same shape, three parts, one week.
+Every task file has the same shape, four phases, one week.
 
-1. Part 1: read the given links in order. For each source, log what it is, 3 things you learned, and 1 question you still have.
-2. Part 2: build your artifact. One small script, diagram, quiz, or demo per member, with real numbers from the repo where they exist.
-3. Part 3: meetup demo. 5 minutes, then 2 questions from the lead.
+1. Phase 1, reading: read the given links in order. For each source, log what it is, 3 things you learned, and 1 question you still have.
+2. Phase 2, coding: write one small script with a fixed spec, run it, keep the output. E1 and E2 work in the Wokwi browser simulator instead.
+3. Phase 3, maths: show every step by hand, with the repo numbers. R and H tracks only.
+4. Phase 4, doc generation: build one markdown file with the output and the maths, push it to this repo.
 
 The evidence checklist at the end of your file is what closes your issue. Write everything yourself. The meetup questions will show the difference.
 
