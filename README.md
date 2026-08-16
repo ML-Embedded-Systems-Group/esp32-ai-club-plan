@@ -25,12 +25,12 @@ One file per member. Each file holds that member's week 1 task.
 
 ## How to use
 
-Every task file has the same shape. Four parts, one week:
+Every task file has the same shape: four parts, one week.
 
 1. Part 1: run the full pipeline yourself. Data, training, sampling, quantization, C runtime. You paste every real output into PIPELINE_LOG.md.
-2. Part 2: your own depth task. Each member dissects one part of the project and produces a deliverable with real numbers.
+2. Part 2: your own depth task. Each member dissects one part of the project and produces a deliverable with measured numbers.
 3. Part 3: learn the fundamentals with proof. 3Blue1Brown notes, a numpy XOR MLP, a hardest-thing paragraph.
-4. Part 4: meetup teach-back. A 10-minute talk with your own numbers.
+4. Part 4: meetup teach-back. A 10-minute talk using the numbers you collected.
 
 The evidence checklist at the end of your file is what closes your issue. The lead asks questions from your log, not from memory.
 
@@ -81,7 +81,7 @@ Workflow:
 - One branch per task: `week1/<member>-<task>`, e.g. `week1/r1-loss-dynamics`.
 - Code changes go in a pull request to the base repo or the club fork.
 - The lead (or R1) reviews and merges. Small PRs only.
-- Deliverables that are docs, explainers, scripts, and logs live in this repo (esp32-ai-club-plan), one folder per member, e.g. `deliverables/r1/`.
+- Deliverables that are docs, explainers, scripts, and logs live in this repo, one folder per member, e.g. `deliverables/r1/`.
 - Set your own git identity first. Your commits must show your name, not a shared one.
 
 Command to set your identity once per clone:
