@@ -6,7 +6,7 @@ Base repo: https://github.com/slvDev/esp32-ai
 
 ## Week 1 rule
 
-No code. No cloning. No accounts. Everyone reads the fundamentals first, takes notes, and makes one small deliverable. Repo work starts in week 2.
+No code. No cloning. No accounts. Everyone reads the fundamentals first, keeps a reading log, and makes one small deliverable. Repo work starts in week 2.
 
 ## Repo contents
 
@@ -16,7 +16,7 @@ One file per member. Each file holds that member's week 1 task.
 |---|---|---|
 | 01_R1.md | ML research | Big picture explainer |
 | 02_R2.md | ML research | Glossary of 20 terms |
-| 03_R3.md | ML research | Tokenization by hand |
+| 03_R3.md | ML research | Tokenization hands-on |
 | 04_R4.md | ML research | Loss and perplexity |
 | 05_R5.md | ML research | Why quantize |
 | 06_H1.md | ML + embedded | Model to device flow |
@@ -31,7 +31,7 @@ One file per member. Each file holds that member's week 1 task.
 
 Every task file has the same shape, three parts, one week.
 
-1. Part 1: read the given links in order, take notes, 40+ lines.
+1. Part 1: read the given links in order. For each source, log what it is, 3 things you learned, and 1 question you still have.
 2. Part 2: make your deliverable. One small file per member, with real numbers from the repo where they exist.
 3. Part 3: meetup teach-back. 5 minutes, then 2 questions from the lead.
 
@@ -50,7 +50,6 @@ The evidence checklist at the end of your file is what closes your issue. Write 
 - RESULTS.md: https://github.com/slvDev/esp32-ai/blob/main/RESULTS.md
 - TinyStories paper: https://arxiv.org/abs/2305.07759
 - Gemma 3n (PLE): https://ai.google.dev/gemma/docs/gemma-3n
-- Wikipedia: machine learning, language model, ESP32, firmware, flash memory
 
 ## Task tracking
 
@@ -67,7 +66,7 @@ Sheet columns for task tabs:
 | Issue | Link to the GitHub issue |
 | Status | not started / in progress / done / blocked |
 | Deliverable link | Link to the file in the repo or Drive |
-| Verify result | The number or evidence, e.g. "notes done" |
+| Verify result | The number or evidence, e.g. "log done" |
 | Date | When the status changed |
 
 Rules:
