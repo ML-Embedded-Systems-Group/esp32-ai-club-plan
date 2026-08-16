@@ -43,3 +43,47 @@ One file per member. Each file holds that member's week 1 task.
 - TinyStories paper: https://arxiv.org/abs/2305.07759
 - Gemma 3n (PLE): https://ai.google.dev/gemma/docs/gemma-3n
 - 3Blue1Brown neural networks: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+
+## Task tracking
+
+Every task has a GitHub issue in this repo, one per member, with a checkbox list. The issue closes when the task is done.
+
+The tracking sheet (Google Sheets, owned by R2) is the single source of truth. It has one tab per week, plus a claims tab.
+
+Sheet columns for task tabs:
+
+| Column | Content |
+|---|---|
+| Member | R1, R2, ... |
+| Task | Short name, e.g. "Data setup" |
+| Issue | Link to the GitHub issue |
+| Status | not started / in progress / done / blocked |
+| Deliverable link | Link to the file in the repo or Drive |
+| Verify result | The number or evidence, e.g. "diff 1e-5" |
+| Date | When the status changed |
+
+Rules:
+
+- Each member updates their own rows.
+- R2 keeps the sheet clean and reports at the meetup.
+- The weekly meetup is the check-in. Blocked tasks get flagged there, not later.
+
+## Code tracking
+
+Code lives in the club fork of the base repo: https://github.com/slvDev/esp32-ai
+
+Workflow:
+
+- Each member clones the club fork. Never push to main directly.
+- One branch per task: `week1/<member>-<task>`, e.g. `week1/r1-data-setup`.
+- Code changes go in a pull request to the club fork.
+- The lead (or R1) reviews and merges. Small PRs only.
+- Docs and explainers live in this repo (esp32-ai-club-plan). Code lives in the fork.
+- Set your own git identity first. Your commits must show your name, not a shared one.
+
+Command to set your identity once per clone:
+
+```
+git config user.name "Your Name"
+git config user.email "you@example.com"
+```
