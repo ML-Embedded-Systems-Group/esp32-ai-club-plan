@@ -4,39 +4,43 @@ Week 1 tasks for the club ML group. The project: replicate the esp32-ai experime
 
 Base repo: https://github.com/slvDev/esp32-ai
 
+## Week 1 rule
+
+No code. No cloning. No accounts. Everyone reads the fundamentals first, takes notes, and makes one small deliverable. Repo work starts in week 2.
+
 ## Repo contents
 
 One file per member. Each file holds that member's week 1 task.
 
 | File | Track | Task |
 |---|---|---|
-| 01_R1.md | ML research | Loss dynamics study |
-| 02_R2.md | ML research | Claims evidence table |
-| 03_R3.md | ML research | Mini tokenizer study |
-| 04_R4.md | ML research | Run record and analyzer explained |
-| 05_R5.md | ML research | Int4 quantizer in numpy |
-| 06_H1.md | ML + embedded | Host runtime timing |
-| 07_H2.md | ML + embedded | Download checksum verification |
-| 08_H3.md | ML + embedded | Export tour |
-| 09_H4.md | ML + embedded | Memory budget calc |
-| 10_H5.md | ML + embedded | Resume procedure test |
-| 11_E1.md | Embedded | Token trace through runtime |
-| 12_E2.md | Embedded | Measurement protocol and parser |
+| 01_R1.md | ML research | Big picture explainer |
+| 02_R2.md | ML research | Glossary of 20 terms |
+| 03_R3.md | ML research | Tokenization by hand |
+| 04_R4.md | ML research | Loss and perplexity |
+| 05_R5.md | ML research | Why quantize |
+| 06_H1.md | ML + embedded | Model to device flow |
+| 07_H2.md | ML + embedded | Memory tiers |
+| 08_H3.md | ML + embedded | The model file |
+| 09_H4.md | ML + embedded | What tok/s means |
+| 10_H5.md | ML + embedded | Inside the runtime |
+| 11_E1.md | Embedded | The board |
+| 12_E2.md | Embedded | Firmware 101 |
 
 ## How to use
 
-Every task file has the same shape: four parts, one week.
+Every task file has the same shape, three parts, one week.
 
-1. Part 1: run the full pipeline yourself. Data, training, sampling, quantization, C runtime. You paste every real output into PIPELINE_LOG.md.
-2. Part 2: your own depth task. Each member dissects one part of the project and produces a deliverable with measured numbers.
-3. Part 3: learn the fundamentals with proof. 3Blue1Brown notes, a numpy XOR MLP, a hardest-thing paragraph.
-4. Part 4: meetup teach-back. A 10-minute talk using the numbers you collected.
+1. Part 1: read the given links in order, take notes, 40+ lines.
+2. Part 2: make your deliverable. One small file per member, with real numbers from the repo where they exist.
+3. Part 3: meetup teach-back. 5 minutes, then 2 questions from the lead.
 
-The evidence checklist at the end of your file is what closes your issue. The lead asks questions from your log, not from memory.
+The evidence checklist at the end of your file is what closes your issue. Write everything yourself. The meetup questions will show the difference.
 
 ## Project timeline
 
-- Weeks 1-4: host-side replication. No board work.
+- Week 1: fundamentals. No repo work.
+- Weeks 2-4: host-side replication.
 - Weeks 5-6: hardware verification on the ESP32-S3 N16R8.
 - Weeks 7-8: improvise and use case.
 
@@ -46,7 +50,7 @@ The evidence checklist at the end of your file is what closes your issue. The le
 - RESULTS.md: https://github.com/slvDev/esp32-ai/blob/main/RESULTS.md
 - TinyStories paper: https://arxiv.org/abs/2305.07759
 - Gemma 3n (PLE): https://ai.google.dev/gemma/docs/gemma-3n
-- 3Blue1Brown neural networks: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+- Wikipedia: machine learning, language model, ESP32, firmware, flash memory
 
 ## Task tracking
 
@@ -59,11 +63,11 @@ Sheet columns for task tabs:
 | Column | Content |
 |---|---|
 | Member | R1, R2, ... |
-| Task | Short name, e.g. "Loss dynamics study" |
+| Task | Short name, e.g. "Big picture explainer" |
 | Issue | Link to the GitHub issue |
 | Status | not started / in progress / done / blocked |
 | Deliverable link | Link to the file in the repo or Drive |
-| Verify result | The number or evidence, e.g. "diff 1e-5" |
+| Verify result | The number or evidence, e.g. "notes done" |
 | Date | When the status changed |
 
 Rules:
@@ -74,11 +78,11 @@ Rules:
 
 ## Code tracking
 
-Each member clones the base repo and works on their own fork.
+Week 1 has no code. From week 2, each member clones the base repo and works on their own fork.
 
 Workflow:
 
-- One branch per task: `week1/<member>-<task>`, e.g. `week1/r1-loss-dynamics`.
+- One branch per task: `week2/<member>-<task>`, e.g. `week2/r1-loss-dynamics`.
 - Code changes go in a pull request to the base repo or the club fork.
 - The lead (or R1) reviews and merges. Small PRs only.
 - Deliverables that are docs, explainers, scripts, and logs live in this repo, one folder per member, e.g. `deliverables/r1/`.
