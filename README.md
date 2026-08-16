@@ -14,12 +14,12 @@ One file per member. Each file holds that member's week 1 task.
 
 | File | Track | Task |
 |---|---|---|
-| 01_R1.md | ML research | Pipeline diagram and video |
+| 01_R1.md | ML research | Pipeline diagram and script |
 | 02_R2.md | ML research | Flashcards quiz |
 | 03_R3.md | ML research | Tokenization hands-on |
 | 04_R4.md | ML research | Perplexity calculation |
 | 05_R5.md | ML research | Quantization toy script |
-| 06_H1.md | ML + embedded | Model to device diagram |
+| 06_H1.md | ML + embedded | Flow diagram and script |
 | 07_H2.md | ML + embedded | Memory poster |
 | 08_H3.md | ML + embedded | 4-bit packing script |
 | 09_H4.md | ML + embedded | Speed simulation |
