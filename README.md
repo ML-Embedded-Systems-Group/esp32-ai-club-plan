@@ -14,16 +14,16 @@ One file per member. Each file holds that member's week 1 task.
 
 | File | Track | Task |
 |---|---|---|
-| 01_R1.md | ML research | Pipeline script + compression maths |
-| 02_R2.md | ML research | Flashcards + glossary doc |
-| 03_R3.md | ML research | BPE merge code + vocab maths |
-| 04_R4.md | ML research | Perplexity code + hand maths |
-| 05_R5.md | ML research | Quantize code + bits maths |
-| 06_H1.md | ML + embedded | Flow sim + memory maths |
-| 07_H2.md | ML + embedded | Memory scale code + poster |
-| 08_H3.md | ML + embedded | Pack code + byte maths |
-| 09_H4.md | ML + embedded | Speed sim + timing maths |
-| 10_H5.md | ML + embedded | Runtime sim + speed maths |
+| 01_R1.md | ML research | Results checker + compression maths |
+| 02_R2.md | ML research | Quiz tool + glossary doc |
+| 03_R3.md | ML research | BPE encoder + vocab maths |
+| 04_R4.md | ML research | Loss to ppl converter + hand maths |
+| 05_R5.md | ML research | Error study + bits maths |
+| 06_H1.md | ML + embedded | Flash read bench + memory maths |
+| 07_H2.md | ML + embedded | Memory budget tool + poster |
+| 08_H3.md | ML + embedded | Binary packer + byte maths |
+| 09_H4.md | ML + embedded | Timing calculator + timing maths |
+| 10_H5.md | ML + embedded | Runtime seed + speed maths |
 | 11_E1.md | Embedded | Wokwi board run |
 | 12_E2.md | Embedded | Wokwi firmware edit |
 
