@@ -6,7 +6,7 @@ Base repo: https://github.com/slvDev/esp32-ai
 
 ## Week 1 rule
 
-R and H tracks: read a famous, readable paper, work out its math by hand, reproduce its result in a script, and write a doc in your own words. The E track skips this: they start on the project repo from day one, host-side only, no hardware.
+R and H tracks: read a short, readable resource, work out its math by hand, reproduce its result in a script, and write a doc in your own words. The R track moves from ML fundamentals to neural network fundamentals, one step per member. The E track skips this: they start on the project repo from day one, host-side only, no hardware.
 
 ## Repo contents
 
@@ -14,11 +14,11 @@ One file per member. Each file holds that member's week 1 task.
 
 | File | Track | Paper or task | Verify against |
 |---|---|---|---|
-| 01_R1.md | ML research | Adam: A Method for Stochastic Optimization | Algorithm 1, theta 0.8014 |
-| 02_R2.md | ML research | word2vec, Efficient Estimation of Word Representations | softmax sums to 1, shared contexts |
-| 03_R3.md | ML research | Sennrich, subword units, BPE | Figure 1 segmentations |
-| 04_R4.md | ML research | Srivastava, Dropout | E[x/p] = x |
-| 05_R5.md | ML research | Jacob, integer-only quantization | error bound S/2 |
+| 01_R1.md | ML research | CS229 probability review | Bayes: P(A1 given B1) = 0.333 |
+| 02_R2.md | ML research | Gradient descent in linear regression | recover y = 3x + 5 |
+| 03_R3.md | ML research | Logistic regression, MLU Explain | all 6 points classified |
+| 04_R4.md | ML research | Nielsen ch. 1, sigmoid neurons | sigma(0.2) = 0.550 |
+| 05_R5.md | ML research | Backpropagation, GfG | the network learns AND |
 | 06_H1.md | ML + embedded | Kipply, inference arithmetic | the article's tok/s table |
 | 07_H2.md | ML + embedded | Latency numbers list | the 200x and 100000x ratios |
 | 08_H3.md | ML + embedded | GGUF format spec | the spec's header layout |
@@ -31,7 +31,7 @@ One file per member. Each file holds that member's week 1 task.
 
 R and H task files have the same shape, four phases, one week. This is the research loop the club trains on every week: read a real result, understand its math, reproduce it in code, write it up.
 
-1. Phase 1, reading: read the assigned paper. Log what it is, 3 things you learned, and 1 question you still have.
+1. Phase 1, reading: read the assigned paper or article. Log what it is, 3 things you learned, and 1 question you still have.
 2. Phase 2, maths: one problem per task, with a published number to verify. You find the steps. The meetup questions come from here.
 3. Phase 3, coding: write a script that reproduces the paper's published numbers. The script output must match the paper.
 4. Phase 4, doc generation: write one markdown doc by hand, in your own words, minimum 350 words, with the math steps and the script output. No drawings, no slides, no posters.
