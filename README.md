@@ -19,11 +19,11 @@ One file per member. Each file holds that member's week 1 task.
 | 03_R3.md | ML research | Logistic regression, MLU Explain | all 6 points classified |
 | 04_R4.md | ML research | Nielsen ch. 1, sigmoid neurons | sigma(0.2) = 0.550 |
 | 05_R5.md | ML research | Backpropagation, GfG | the network learns AND |
-| 06_H1.md | ML + embedded | Kipply, inference arithmetic | the article's tok/s table |
-| 07_H2.md | ML + embedded | Latency numbers list | the 200x and 100000x ratios |
-| 08_H3.md | ML + embedded | GGUF format spec | the spec's header layout |
-| 09_H4.md | ML + embedded | Drepper, memory article | 12.8 and 25.6 GB/s |
-| 10_H5.md | ML + embedded | HF, generation strategies | greedy equals argmax |
+| 06_H1.md | ML + embedded | Floating point, visually explained | 3.5 is 0x40600000 |
+| 07_H2.md | ML + embedded | Interactive latency numbers | the 200x and 100000x ratios |
+| 08_H3.md | ML + embedded | Little and big endian | bytes 78 56 34 12 |
+| 09_H4.md | ML + embedded | Bandwidth vs latency | 12.8 and 25.6 GB/s |
+| 10_H5.md | ML + embedded | Softmax function | 0.090, 0.245, 0.665 |
 | 11_E1.md | Embedded | Repo setup and build | tests pass, model fetch works |
 | 12_E2.md | Embedded | Repo pipeline trace | one token, file to text |
 
