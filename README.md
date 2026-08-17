@@ -6,41 +6,43 @@ Base repo: https://github.com/slvDev/esp32-ai
 
 ## Week 1 rule
 
-No repo work this week. Everyone reads the fundamentals first, keeps a reading log, and builds one hands-on artifact: a small script, a diagram, a quiz, or a browser demo. Tiny scripts and browser tools are fine. No accounts needed.
+R and H tracks: read a famous, readable paper, work out its math by hand, reproduce its result in a script, and write a doc in your own words. The E track skips this: they start on the project repo from day one, host-side only, no hardware.
 
 ## Repo contents
 
 One file per member. Each file holds that member's week 1 task.
 
-| File | Track | Article | Reproduce |
+| File | Track | Paper or task | Verify against |
 |---|---|---|---|
-| 01_R1.md | ML research | Shannon, entropy of English | 4.76 and 4.03 bits per letter |
-| 02_R2.md | ML research | Piantadosi, Zipf's law review | exponent near 1.0 |
-| 03_R3.md | ML research | HF course, BPE tokenization | the article's merge order |
-| 04_R4.md | ML research | Jurafsky, perplexity | ppl = N for uniform N |
-| 05_R5.md | ML research | Lei Mao, quantization | the article's example table |
+| 01_R1.md | ML research | Adam: A Method for Stochastic Optimization | Algorithm 1, theta 0.8014 |
+| 02_R2.md | ML research | word2vec, Efficient Estimation of Word Representations | softmax sums to 1, shared contexts |
+| 03_R3.md | ML research | Sennrich, subword units, BPE | Figure 1 segmentations |
+| 04_R4.md | ML research | Srivastava, Dropout | E[x/p] = x |
+| 05_R5.md | ML research | Jacob, integer-only quantization | error bound S/2 |
 | 06_H1.md | ML + embedded | Kipply, inference arithmetic | the article's tok/s table |
 | 07_H2.md | ML + embedded | Latency numbers list | the 200x and 100000x ratios |
 | 08_H3.md | ML + embedded | GGUF format spec | the spec's header layout |
 | 09_H4.md | ML + embedded | Drepper, memory article | 12.8 and 25.6 GB/s |
 | 10_H5.md | ML + embedded | HF, generation strategies | greedy equals argmax |
-| 11_E1.md | Embedded | ESP32-S3 clock docs | 4.1667 ns cycle time |
-| 12_E2.md | Embedded | LEDC PWM docs | 2^14 = 16384 levels |
+| 11_E1.md | Embedded | Repo setup and build | tests pass, model fetch works |
+| 12_E2.md | Embedded | Repo pipeline trace | one token, file to text |
 
 ## How to use
 
-Every task file has the same shape, four phases, one week. This is the research loop the club trains on every week: read a real result, understand its math, reproduce it in code, write it up.
+R and H task files have the same shape, four phases, one week. This is the research loop the club trains on every week: read a real result, understand its math, reproduce it in code, write it up.
 
-1. Phase 1, reading: read the assigned article or resource. Log what it is, 3 things you learned, and 1 question you still have.
-2. Phase 2, maths: work out the article's math by hand, every step, with units.
-3. Phase 3, coding: write a script that reproduces the article's published numbers. The script output must match the article.
-4. Phase 4, doc generation: write one markdown doc by hand, in your own words, minimum 350 words (300 for E track), with the math steps and the script output. No drawings, no slides, no posters.
+1. Phase 1, reading: read the assigned paper. Log what it is, 3 things you learned, and 1 question you still have.
+2. Phase 2, maths: one problem per task, with a published number to verify. You find the steps. The meetup questions come from here.
+3. Phase 3, coding: write a script that reproduces the paper's published numbers. The script output must match the paper.
+4. Phase 4, doc generation: write one markdown doc by hand, in your own words, minimum 350 words, with the math steps and the script output. No drawings, no slides, no posters.
+
+E tasks have their own shape: clone the project repo, build it on the host, trace the pipeline, and write a repo map. No hardware this week.
 
 The evidence checklist at the end of your file is what closes your issue. Write everything yourself. Do not paste from any AI tool. Your pair reads your doc before the meetup, and the lead asks you 2 questions from your maths.
 
 ## Project timeline
 
-- Week 1: fundamentals. No repo work.
+- Week 1: fundamentals for R and H. E starts repo work.
 - Weeks 2-4: host-side replication.
 - Weeks 5-6: hardware verification on the ESP32-S3 N16R8.
 - Weeks 7-8: improvise and use case.
