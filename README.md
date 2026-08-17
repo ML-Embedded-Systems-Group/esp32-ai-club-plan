@@ -14,16 +14,18 @@ One file per member. Each file holds that member's week 1 task.
 
 | File | Track | Task |
 |---|---|---|
-| 01_R1.md | ML research | Results checker + compression maths |
-| 02_R2.md | ML research | Quiz tool + glossary doc |
-| 03_R3.md | ML research | BPE encoder + vocab maths |
-| 04_R4.md | ML research | Loss to ppl converter + hand maths |
-| 05_R5.md | ML research | Error study + bits maths |
-| 06_H1.md | ML + embedded | Flash read bench + memory maths |
-| 07_H2.md | ML + embedded | Memory budget tool + poster |
-| 08_H3.md | ML + embedded | Binary packer + byte maths |
-| 09_H4.md | ML + embedded | Timing calculator + timing maths |
-| 10_H5.md | ML + embedded | Runtime seed + speed maths |
+| 01_R1.md | ML research | Results checker, compression maths, pipeline doc |
+| 02_R2.md | ML research | Glossary linter, units maths, glossary doc |
+| 03_R3.md | ML research | BPE encoder, vocab maths, tokenization doc |
+| 04_R4.md | ML research | Loss to ppl converter, ppl maths, ppl doc |
+| 05_R5.md | ML research | Error sweep, bits maths, error study doc |
+| 06_H1.md | ML + embedded | Read benchmark, memory maths, token journey doc |
+| 07_H2.md | ML + embedded | Budget tool, tier maths, memory tiers doc |
+| 08_H3.md | ML + embedded | Binary packer, byte maths, packer doc |
+| 09_H4.md | ML + embedded | Timing calculator, timing maths, timing doc |
+| 10_H5.md | ML + embedded | Runtime seed, speed maths, runtime doc |
+| 11_E1.md | Embedded | Blink firmware from scratch, clock maths |
+| 12_E2.md | Embedded | PWM dimmer firmware, PWM maths |
 | 11_E1.md | Embedded | Wokwi board run |
 | 12_E2.md | Embedded | Wokwi firmware edit |
 
@@ -32,11 +34,11 @@ One file per member. Each file holds that member's week 1 task.
 Every task file has the same shape, four phases, one week.
 
 1. Phase 1, reading: read the given links in order. For each source, log what it is, 3 things you learned, and 1 question you still have.
-2. Phase 2, coding: write one small script with a fixed spec, run it, keep the output. E1 and E2 work in the Wokwi browser simulator instead.
-3. Phase 3, maths: show every step by hand, with the repo numbers. R and H tracks only.
-4. Phase 4, doc generation: build one markdown file with the output and the maths, push it to this repo.
+2. Phase 2, coding: write one real utility script with a fixed spec, run it, keep the output. E1 and E2 write firmware in the Wokwi simulator.
+3. Phase 3, maths: show every step by hand, with units and the repo numbers. The meetup questions come from this phase.
+4. Phase 4, doc generation: write one markdown doc by hand, in your own words, minimum 350 words (300 for E track), with the script output and the maths. No drawings, no slides, no posters.
 
-The evidence checklist at the end of your file is what closes your issue. Write everything yourself. The meetup questions will show the difference.
+The evidence checklist at the end of your file is what closes your issue. Write everything yourself. Do not paste from any AI tool. Your pair reads your doc before the meetup, and the lead asks you 2 questions from your maths.
 
 ## Project timeline
 
