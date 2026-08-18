@@ -1,55 +1,69 @@
 # ESP32 AI Club Plan
 
-Week 1 tasks for the club ML group. The project: replicate the esp32-ai experiment, verify the published results, and build a practical use case.
+This repository contains the Week 1 tasks for the ESP32 AI Club.
 
-Base repo: https://github.com/slvDev/esp32-ai
+The club project studies machine learning on the ESP32-S3. Members read a trusted resource, solve a small problem, reproduce the result in code, and write a short report.
 
-## Week 1 rule
+## Week 1 Goals
 
-R and H tracks: read a short, readable resource, work out its math by hand, reproduce its result in a script, and write a doc in your own words. The R track moves from ML fundamentals to neural network fundamentals, one step per member. The E track skips this: they start on the project repo from day one, host-side only, no hardware.
+By the end of Week 1, each member must:
 
-## Repo contents
+1. Explain the assigned idea in their own words.
+2. Show the assigned maths step by step.
+3. Write and run the assigned reproduction script.
+4. Record the script output in a Markdown report.
+5. Ask their pair to review the report.
 
-One file per member. Each file holds that member's week 1 task.
+Do not copy text or code from an AI tool. Use the resources as study material.
 
-| File | Track | Paper or task | Verify against |
+## Task Files
+
+| File | Track | Topic | Main result |
 |---|---|---|---|
-| 01_R1.md | ML research | CS229 probability review | Bayes: P(A1 given B1) = 0.333 |
-| 02_R2.md | ML research | Gradient descent in linear regression | recover y = 3x + 5 |
-| 03_R3.md | ML research | Logistic regression, MLU Explain | all 6 points classified |
-| 04_R4.md | ML research | Nielsen ch. 1, sigmoid neurons | sigma(0.2) = 0.550 |
-| 05_R5.md | ML research | Backpropagation, GfG | the network learns AND |
-| 06_H1.md | ML + embedded | Floating point, visually explained | 3.5 is 0x40600000 |
-| 07_H2.md | ML + embedded | Interactive latency numbers | the 200x and 100000x ratios |
-| 08_H3.md | ML + embedded | Little and big endian | bytes 78 56 34 12 |
-| 09_H4.md | ML + embedded | Bandwidth vs latency | 12.8 and 25.6 GB/s |
-| 10_H5.md | ML + embedded | Softmax function | 0.090, 0.245, 0.665 |
-| 11_E1.md | Embedded | Repo setup and build | tests pass, model fetch works |
-| 12_E2.md | Embedded | Repo pipeline trace | one token, file to text |
+| 01_R1.md | ML research | Probability | `P(B1) = 0.6`, `P(A1 given B1) = 0.333` |
+| 02_R2.md | ML research | Gradient descent | Recover `y = 3x + 5` |
+| 03_R3.md | ML research | Logistic regression | Classify all 6 points |
+| 04_R4.md | ML research | Sigmoid neurons | `sigma(0.2) = 0.550` |
+| 05_R5.md | ML research | Backpropagation | Learn the AND rule |
+| 06_H1.md | ML and embedded | Floating point | `3.5 = 0x40600000` |
+| 07_H2.md | ML and embedded | Latency | Reproduce the listed ratios |
+| 08_H3.md | ML and embedded | Endianness | Show `78 56 34 12` |
+| 09_H4.md | ML and embedded | Bandwidth | Reproduce `12.8` and `25.6 GB/s` |
+| 10_H5.md | ML and embedded | Softmax | Reproduce `0.090`, `0.245`, `0.665` |
+| 11_E1.md | Embedded | Repository setup | Run tests and fetch a model |
+| 12_E2.md | Embedded | Pipeline trace | Follow one token to text |
 
-## How to use
+## Common Report Rules
 
-R and H task files have the same shape, four phases, one week. This is the research loop the club trains on every week: read a real result, understand its math, reproduce it in code, write it up.
+Use the report name listed in your task file. Write the report by hand in your own words.
 
-1. Phase 1, reading: read the assigned paper or article.
-2. Phase 2, maths: one problem per task, with a published number to verify. You find the steps.
-3. Phase 3, coding: write a script that reproduces the paper's published numbers. The script output must match the paper.
-4. Phase 4, doc generation: write one markdown doc by hand, in your own words, minimum 350 words, with the math steps and the script output. No drawings, no slides, no posters.
+R and H reports must contain at least 350 words. E reports must contain at least 300 words.
 
-E tasks have their own shape: clone the project repo, build it on the host, trace the pipeline, and write a repo map. No hardware this week.
+Each report must contain the resource summary, the maths or code evidence, the output, and the unanswered questions.
 
-The evidence checklist at the end of your file is what closes your issue. Write everything yourself. Do not paste from any AI tool. Your pair reads your doc and verifies your checklist.
+Use code blocks for commands and script output. Label each output with the command that produced it.
 
-## Project timeline
+## Common Work Order
 
-- Week 1: fundamentals for R and H. E starts repo work.
-- Weeks 2-4: host-side replication.
-- Weeks 5-6: hardware verification on the ESP32-S3 N16R8.
-- Weeks 7-8: improvise and use case.
+1. Read the assigned resource.
+2. Write a short summary without copying the source.
+3. Solve the maths by hand.
+4. Write the reproduction script.
+5. Run the script and record its output.
+6. Write the report.
+7. Complete the evidence checklist.
+8. Ask your pair to review the report.
 
-## Key resources
+## Project Resources
 
-- Repo: https://github.com/slvDev/esp32-ai
-- RESULTS.md: https://github.com/slvDev/esp32-ai/blob/main/RESULTS.md
+- Project repository: https://github.com/slvDev/esp32-ai
+- Published results: https://github.com/slvDev/esp32-ai/blob/main/RESULTS.md
 - TinyStories paper: https://arxiv.org/abs/2305.07759
-- Gemma 3n (PLE): https://ai.google.dev/gemma/docs/gemma-3n
+- Gemma 3n PLE: https://ai.google.dev/gemma/docs/gemma-3n
+
+## Timeline
+
+- Week 1: Complete the assigned fundamentals or repository task.
+- Weeks 2-4: Reproduce the project on the host.
+- Weeks 5-6: Verify results on the ESP32-S3 N16R8.
+- Weeks 7-8: Build and test a practical use case.
