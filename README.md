@@ -31,7 +31,7 @@ One file per member. Each file holds that member's week 1 task.
 
 R and H task files have the same shape, four phases, one week. This is the research loop the club trains on every week: read a real result, understand its math, reproduce it in code, write it up.
 
-1. Phase 1, reading: read the assigned paper or article. Log what it is, 3 things you learned, and 1 question you still have.
+1. Phase 1, reading: read the assigned paper or article.
 2. Phase 2, maths: one problem per task, with a published number to verify. You find the steps.
 3. Phase 3, coding: write a script that reproduces the paper's published numbers. The script output must match the paper.
 4. Phase 4, doc generation: write one markdown doc by hand, in your own words, minimum 350 words, with the math steps and the script output. No drawings, no slides, no posters.
