@@ -61,6 +61,12 @@ Use code blocks for commands and script output. Label each output with the comma
 - TinyStories paper: https://arxiv.org/abs/2305.07759
 - Gemma 3n PLE: https://ai.google.dev/gemma/docs/gemma-3n
 
+## Extra Reading
+
+- ESP32-S3 technical reference: https://www.espressif.com/sites/default/files/documentation/esp32-s3_technical_reference_manual_en.pdf
+- TinyML overview: https://www.tensorflow.org/lite/microcontrollers
+- Hugging Face NLP course: https://huggingface.co/learn/nlp-course/chapter1/1
+
 ## Timeline
 
 - Week 1: Complete the assigned fundamentals or repository task.
