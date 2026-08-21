@@ -3,24 +3,23 @@
 ## Resource Summary
 ### Cost Function
 Formula : 
+
 $$
-J = \frac{1}{2n}\sum_{i=1}^{n}(\hat{y}_i-y_i)^2
-$$ 
+J = \frac{1}{2n}\sum_{i=1}^{n}(\hat{y}_i - y_i)^2
+$$
+
 where n = number of training examples, ŷᵢ = Predicted value for the i-th data point
 yᵢ = Actual value for the i-th data point<br>
 It calculates the error i.e. difference b/w predicted values with the actual values. The 1/2 is added to make the derivative simpler.
 ### Partial Derivatives
 Formula : 
+
 $$
-\frac{\partial J}{\partial w}
-=
-\frac{1}{n}\sum_{i=1}^{n}(\hat{y}_i-y_i)x_i
+\frac{\partial J}{\partial w} = \frac{1}{n}\sum_{i=1}^{n}(\hat{y}_i - y_i)x_i
 $$
 
 $$
-\frac{\partial J}{\partial b}
-=
-\frac{1}{n}\sum_{i=1}^{n}(\hat{y}_i-y_i)
+\frac{\partial J}{\partial b} = \frac{1}{n}\sum_{i=1}^{n}(\hat{y}_i - y_i)
 $$
 
 where ŷᵢ = wx+b and xᵢ = feature of the i-th data point. <br>
@@ -34,11 +33,13 @@ If we choose α too small, the training becomes extremely slow, and if we choose
 ### Update Rule
 The update rule used to find new w and b (w' & b').<br>
 Formula :
+
 $$
 w' = w - \alpha \frac{\partial J}{\partial w},
 \qquad
 b' = b - \alpha \frac{\partial J}{\partial b}
-$$ <br>
+$$
+
 Gradient Descent repeatedly updates w and b in the direction that decreases the error. The model is considered converged when w and b change very little with each update and the cost is close to the minimum.
 
 
@@ -141,4 +142,4 @@ Suppose the line is y=wx+b. First we initialize the calculation by taking any ar
 
 
 ## What I Still Need to Learn
-I still need to learn the linear regression method using ordinary least squares, which scikit-learn uses by default
+I still need to learn the linear regression method using ordinary least squares, which scikit-learn uses by default.
