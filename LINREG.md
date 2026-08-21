@@ -35,8 +35,8 @@ The update rule used to find new w and b (w' & b').<br>
 Formula :
 
 $$
-w' = w - \alpha \frac{\partial J}{\partial w},
-\qquad
+w' = w - \alpha \frac{\partial J}{\partial w}
+\quad,\quad
 b' = b - \alpha \frac{\partial J}{\partial b}
 $$
 
