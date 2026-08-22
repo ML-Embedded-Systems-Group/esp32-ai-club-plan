@@ -22,7 +22,7 @@ $$
 \frac{\partial J}{\partial b} = \frac{1}{n}\sum_{i=1}^{n}(\hat{y}_i - y_i)
 $$
 
-where ŷᵢ = wx+b and xᵢ = feature of the i-th data point. <br>
+where ŷᵢ = wxᵢ+b and xᵢ = feature of the i-th data point. <br>
 It tells us how the cost changes when we change w or b. Gradient Descent uses these values to adjust w and b in order to lower the cost.
 
 ### Learning Rate(α)
