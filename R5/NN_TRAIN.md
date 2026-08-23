@@ -46,7 +46,7 @@ The C++ implementation was trained for 5000 epochs using all four possible input
 The training output showed the prediction for `(1,1)` progressively increasing toward the required output of `1`.
 Example output:
 
-`Made Neuron 0 0\n`
+`Made Neuron 0 0`
 `Made Neuron 0 1`
 `Made Neuron 0 2`
 `Made Neuron 1 0`
