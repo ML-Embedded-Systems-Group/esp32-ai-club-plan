@@ -46,7 +46,7 @@ The C++ implementation was trained for 5000 epochs using all four possible input
 The training output showed the prediction for `(1,1)` progressively increasing toward the required output of `1`.
 Example output:
 
-`Made Neuron 0 0`
+`Made Neuron 0 0\n`
 `Made Neuron 0 1`
 `Made Neuron 0 2`
 `Made Neuron 1 0`
@@ -84,6 +84,7 @@ The AND function produces `1` only when both inputs are `1`. Its truth table is:
 | 0 | 1 | 0 |
 | 1 | 0 | 0 |
 | 1 | 1 | 1 |
+
 Initially, the network weights are random, so its predictions are not necessarily close to these targets. During each training iteration, an input is passed through the network using the forward propagation step.
 The output is then compared with the target. Backpropagation calculates the output gradient and propagates the error backwards through the hidden layer. Each connection weight is updated using its gradient and the learning rate.
 Repeating this process thousands of times causes the network to find a set of weights that represents the AND relationship. The hidden neurons learn intermediate representations of the input combination, while the output neuron combines these representations to produce the final prediction.
