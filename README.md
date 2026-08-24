@@ -33,6 +33,20 @@ Do not copy text or code from an AI tool. Use the resources as study material.
 | 11_E1.md | Embedded | Repository setup | Run tests and fetch a model |
 | 12_E2.md | Embedded | Pipeline trace | Follow one token to text |
 
+## Submissions
+
+Reports and reproduction programs live under `submissions/week-1/<task>_<member>/`.
+Keep task guides at the repository root; do not add submission files beside them.
+
+Current Week 1 submissions:
+
+| Task | Submission |
+|---|---|
+| R2 | [`submissions/week-1/R2_Ritarup/`](submissions/week-1/R2_Ritarup/) |
+| R5 | [`submissions/week-1/R5/`](submissions/week-1/R5/) |
+
+Use the same layout under `submissions/week-2/` when Week 2 begins. Every pull request is reviewed before merge.
+
 ## Common Report Rules
 
 Use the report name listed in your task file. Write the report by hand in your own words.
