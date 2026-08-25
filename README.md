@@ -35,7 +35,7 @@ Do not copy text or code from an AI tool. Use the resources as study material.
 
 ## Week 2 Task
 
-Read [`tasks/week-2/01_PAPER_SUMMARY.md`](tasks/week-2/01_PAPER_SUMMARY.md) before choosing a paper. Week 2 has no coding or reproduction work: submit only one **400–600 word research-paper summary**. Every student must read the mandatory paper-reading guide in that task file first.
+Read [`tasks/week-2/00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md) before choosing a paper. Week 2 has no coding or reproduction work: submit only one **400–600 word research-paper summary**. The Week 2 folder has one assignment intro, one resources file with teasers, and one guide file for each of the ten papers.
 
 ## Submissions
 
@@ -46,6 +46,7 @@ Current Week 1 submissions:
 
 | Task | Submission |
 |---|---|
+| R1 | [`submissions/week-1/R1_Raunak/`](submissions/week-1/R1_Raunak/) |
 | R2 | [`submissions/week-1/R2_Ritarup/`](submissions/week-1/R2_Ritarup/) |
 | R5 | [`submissions/week-1/R5/`](submissions/week-1/R5/) |
 
@@ -76,7 +77,7 @@ Use code blocks for commands and script output. Label each output with the comma
 
 ## Week 2 Work Order
 
-1. Read the mandatory paper-reading guide in [`tasks/week-2/01_PAPER_SUMMARY.md`](tasks/week-2/01_PAPER_SUMMARY.md).
+1. Read the mandatory paper-reading guide in [`tasks/week-2/00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md).
 2. Choose one paper from the embedded/TinyML or pure-ML list.
 3. Annotate the paper using the guide's prompts.
 4. Write and submit only the 400–600 word summary.

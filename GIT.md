@@ -32,7 +32,7 @@ git checkout -b week1-r2-soham
 Read the guide for your week before starting:
 
 - Week 1: [`tasks/week-1/`](tasks/week-1/)
-- Week 2: [`tasks/week-2/01_PAPER_SUMMARY.md`](tasks/week-2/01_PAPER_SUMMARY.md)
+- Week 2: [`tasks/week-2/00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md)
 
 ### 4. Complete Your Task
 
