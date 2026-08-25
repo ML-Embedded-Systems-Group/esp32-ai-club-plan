@@ -37,6 +37,23 @@ Do not copy text or code from an AI tool. Use the resources as study material.
 
 Read [`tasks/week-2/00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md) before choosing a paper. Week 2 has no coding or reproduction work: submit only one **400–600 word research-paper summary**. The Week 2 folder has one assignment intro, one resources file with teasers, and one guide file for each of the ten papers.
 
+### Week 2 Guides
+
+| File | Purpose |
+|---|---|
+| [`00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md) | Assignment coverage, report format, and checklist |
+| [`01_RESOURCES.md`](tasks/week-2/01_RESOURCES.md) | Background resources with short teasers |
+| [`02_EMBEDDED_TFLM.md`](tasks/week-2/02_EMBEDDED_TFLM.md) | TensorFlow Lite Micro |
+| [`03_EMBEDDED_PLATFORMS.md`](tasks/week-2/03_EMBEDDED_PLATFORMS.md) | TinyML Platforms Benchmarking |
+| [`04_EMBEDDED_MLPERF.md`](tasks/week-2/04_EMBEDDED_MLPERF.md) | MLPerf Tiny Benchmark |
+| [`05_EMBEDDED_MCUNET.md`](tasks/week-2/05_EMBEDDED_MCUNET.md) | MCUNet |
+| [`06_EMBEDDED_TINYTL.md`](tasks/week-2/06_EMBEDDED_TINYTL.md) | TinyTL |
+| [`07_ML_GRADIENT_DESCENT.md`](tasks/week-2/07_ML_GRADIENT_DESCENT.md) | Gradient-descent optimization |
+| [`08_ML_NUMPY.md`](tasks/week-2/08_ML_NUMPY.md) | NumPy array foundations |
+| [`09_ML_GLOROT.md`](tasks/week-2/09_ML_GLOROT.md) | Training deep feedforward networks |
+| [`10_ML_ADAM.md`](tasks/week-2/10_ML_ADAM.md) | Adam optimization |
+| [`11_ML_TRANSFORMER.md`](tasks/week-2/11_ML_TRANSFORMER.md) | Attention and Transformers |
+
 ## Submissions
 
 Week 1 reports and reproduction programs live under `submissions/week-1/<task>_<member>/`. Week 2 has one Markdown summary under `submissions/week-2/<paper>_<member>/` and no code.
