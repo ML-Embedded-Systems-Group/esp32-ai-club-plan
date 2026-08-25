@@ -1,9 +1,9 @@
 # Understanding the difficulty of training deep feedforward neural networks
 
-Member:
+Member: Abhilash Nandi
 Pair/Reviewer:
-Assigned date:
-Status: Not started
+Assigned date: 25/08/26
+Status: Started
 
 [Back to the Week 2 task intro](00_TASK_INTRO.md) · [Read the mandatory Alexine guide](https://alexine.rip/lab/fix-your-paper-reading-game.html)
 
