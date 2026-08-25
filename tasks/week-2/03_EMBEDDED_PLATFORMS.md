@@ -1,9 +1,9 @@
 # TinyML Platforms Benchmarking
 
-Member:
+Member: Soham Majhi
 Pair/Reviewer:
-Assigned date:
-Status: Not started
+Assigned date: 25/02/2026
+Status: Started
 
 [Back to the Week 2 task intro](00_TASK_INTRO.md) · [Read the mandatory Alexine guide](https://alexine.rip/lab/fix-your-paper-reading-game.html)
 
