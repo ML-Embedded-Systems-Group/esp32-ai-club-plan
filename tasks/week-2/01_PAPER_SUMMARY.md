@@ -6,27 +6,6 @@ Week 2 has one task: write a **400–600 word summary of one research paper** fr
 
 Before opening a paper, every student must read [Fix your paper reading game](https://alexine.rip/lab/fix-your-paper-reading-game.html). Follow its annotation approach while reading: set the stage with a paper copy or tablet, then identify the problem/state of the art, goal, challenges, key mechanism, key results, strengths, improvements, what you learned or liked, and a short summary in your own words. Keep those notes; they are the evidence for the report. Do not treat the abstract alone as a paper reading.
 
-## Learning ladder
-
-Read or use these resources in this order, moving from neural-network intuition toward research papers:
-
-1. [Arjun Virk — ML Guide](https://www.arjunvirk.com/writing/ml-guide)
-2. [Aman AI — AI Primers](https://aman.ai/primers/ai/)
-3. [Alisa's Book of LLMs](https://alisawuffles.notion.site/alisa-s-book-of-llms)
-4. [Aleksa Gordic — Blog](https://www.aleksagordic.com/blog)
-5. **Main intuition resource: [Colah's blog](https://colah.github.io/)**
-
-Use these previously bookmarked resources when a paper assumes background you do not yet have:
-
-- [Dive into Deep Learning (D2L)](https://d2l.ai/)
-- [Stanford CS231n notes](https://cs231n.github.io/)
-- [Stanford CS224N](https://web.stanford.edu/class/cs224n/)
-- [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
-- [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
-- [Let's build GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY)
-
-These are supports, not extra assignments. Stop when you have enough context to explain the selected paper clearly.
-
 ## Embedded and TinyML papers
 
 Choose one paper from this list. The sequence moves from a small inference runtime to measurement, system design, and on-device learning.
@@ -46,6 +25,28 @@ Choose one paper from this list. Read them in order if you want a progression fr
 3. [Understanding the difficulty of training deep feedforward neural networks](https://proceedings.mlr.press/v9/glorot10a.html)
 4. [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980)
 5. [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+
+## Learning ladder
+
+Read or use these resources in this order, moving from neural-network intuition toward research papers:
+
+1. **Accessible overview of ML, neural networks, deep learning, tokenization, training, and transformers:** [Leerob — AI](https://leerob.com/ai)
+2. [Arjun Virk — ML Guide](https://www.arjunvirk.com/writing/ml-guide)
+3. [Aman AI — AI Primers](https://aman.ai/primers/ai/)
+4. [Alisa's Book of LLMs](https://alisawuffles.notion.site/alisa-s-book-of-llms)
+5. [Aleksa Gordic — Blog](https://www.aleksagordic.com/blog)
+6. **Main intuition resource: [Colah's blog](https://colah.github.io/)**
+
+Use these previously bookmarked resources when a paper assumes background you do not yet have:
+
+- [Dive into Deep Learning (D2L)](https://d2l.ai/)
+- [Stanford CS231n notes](https://cs231n.github.io/)
+- [Stanford CS224N](https://web.stanford.edu/class/cs224n/)
+- [Understanding Deep Learning](https://udlbook.github.io/udlbook/)
+- [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html)
+- [Let's build GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+
+These are supports, not extra assignments. Stop when you have enough context to explain the selected paper clearly.
 
 ## Embedded-paper supplements
 
