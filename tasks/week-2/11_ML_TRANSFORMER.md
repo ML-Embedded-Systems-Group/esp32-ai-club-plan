@@ -1,6 +1,6 @@
 # Attention Is All You Need
 
-Member:
+Member:Pritish Mondal    
 Pair/Reviewer:
 Assigned date:
 Status: Not started
