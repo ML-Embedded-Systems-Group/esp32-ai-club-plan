@@ -2,8 +2,8 @@
 
 Member:Pritish Mondal    
 Pair/Reviewer:
-Assigned date:
-Status: Not started
+Assigned date:05/08/2026
+Status: Completed
 
 [Back to the Week 2 task intro](00_TASK_INTRO.md) · [Read the mandatory Alexine guide](https://alexine.rip/lab/fix-your-paper-reading-game.html)
 
