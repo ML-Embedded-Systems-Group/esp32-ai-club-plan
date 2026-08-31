@@ -1,50 +1,85 @@
-import struct
+import math
 
-def print_ieee754_components(number):
-    """
-    Takes a decimal number and prints its IEEE 754 representation 
-    in Half, Single, and Double precision, broken down into Sign, Exponent, and Mantissa.
-    """
-    print(f"=== Analyzing Number: {number} ===\n")
+def decimal_to_ieee32(n):
+    """Mathematically converts a float to 32-bit IEEE 754 binary without struct."""
+    if n == 0.0: return "0" * 32
+    
+    sign_bit = "1" if n < 0 else "0"
+    n = abs(n)
+    
+    # Calculate Exponent
+    exponent = math.floor(math.log(n, 2))
+    bias = 127
+    stored_exp = exponent + bias
+    exp_bits = f"{stored_exp:08b}"
+    
+    # Calculate Mantissa
+    mantissa_val = (n / (2 ** exponent)) - 1
+    mantissa_bits = ""
+    for _ in range(23):
+        mantissa_val *= 2
+        if mantissa_val >= 1:
+            mantissa_bits += "1"
+            mantissa_val -= 1
+        else:
+            mantissa_bits += "0"
+            
+    return sign_bit + exp_bits + mantissa_bits
 
-    # A dictionary to hold our configurations for the 3 formats
-    # Format: (struct_code, total_bits, exponent_bits, mantissa_bits, bias)
-    formats = {
-        "Half (16-bit)":   (">e", 16, 5,  10, 15),
-        "Single (32-bit)": (">f", 32, 8,  23, 127),
-        "Double (64-bit)": (">d", 64, 11, 52, 1023)
-    }
+def decimal_to_ieee64(n):
+    """Mathematically converts a float to 64-bit IEEE 754 binary for 0.1 comparison."""
+    if n == 0.0: return "0" * 64
+    sign_bit = "1" if n < 0 else "0"
+    n = abs(n)
+    exponent = math.floor(math.log(n, 2))
+    exp_bits = f"{(exponent + 1023):011b}"
+    
+    mantissa_val = (n / (2 ** exponent)) - 1
+    mantissa_bits = ""
+    for _ in range(52):
+        mantissa_val *= 2
+        if mantissa_val >= 1:
+            mantissa_bits += "1"
+            mantissa_val -= 1
+        else:
+            mantissa_bits += "0"
+    return sign_bit + exp_bits + mantissa_bits
 
-    for name, (struct_code, total_bits, exp_bits, mant_bits, bias) in formats.items():
-        try:
+def ieee_to_decimal(binary_str, precision="single"):
+    """Performs the exact round-trip calculation from binary back to decimal."""
+    exp_len, bias = (8, 127) if precision == "single" else (11, 1023)
+    
+    sign = -1 if binary_str[0] == '1' else 1
+    exponent = int(binary_str[1 : 1+exp_len], 2) - bias
+    
+    mantissa_fraction = 0.0
+    for i, bit in enumerate(binary_str[1+exp_len:]):
+        if bit == '1':
+            mantissa_fraction += 2 ** -(i + 1)
             
-            packed_bytes = struct.pack(struct_code, number)
-            
-            binary_string = "".join(f"{byte:08b}" for byte in packed_bytes)
-            
-            
-            sign_bit = binary_string[0]
-            exponent_bits = binary_string[1 : 1 + exp_bits]
-            mantissa_bits = binary_string[1 + exp_bits : ]
-            
-            
-            raw_exponent_val = int(exponent_bits, 2)
-            actual_exponent = raw_exponent_val - bias
-            
-            
-            print(f"--- {name} ---")
-            print(f"Raw Bits : {sign_bit} {exponent_bits} {mantissa_bits}")
-            print(f"Sign     : {sign_bit} (0 = Positive, 1 = Negative)")
-            print(f"Exponent : {exponent_bits} (Raw: {raw_exponent_val}, Actual Window: 2^{actual_exponent})")
-            print(f"Mantissa : {mantissa_bits} (The linear offset in the window)")
-            print("-" * 40)
-            
-        except OverflowError:
-            print(f"--- {name} ---")
-            print("Number is too large/small to be represented in this format!")
-            print("-" * 40)
-
+    return sign * (2 ** exponent) * (1 + mantissa_fraction)
 
 if __name__ == "__main__":
-    test_number = float(input("Enter a decimal number to analyze: "))
-    print_ieee754_components(test_number)
+    print("--- H1 Task Verification ---\n")
+    
+    targets = [3.5, 0.25]
+    for num in targets:
+        bin_32 = decimal_to_ieee32(num)
+        hex_32 = hex(int(bin_32, 2))
+        round_trip = ieee_to_decimal(bin_32, "single")
+        
+        print(f"Target: {num}")
+        print(f"Binary: {bin_32[0]} {bin_32[1:9]} {bin_32[9:]}")
+        print(f"Hex:    {hex_32.upper().replace('X', 'x')}")
+        print(f"Round-trip exact match: {num == round_trip} (Calculated: {round_trip})\n")
+
+    print("--- 0.1 Single vs Double Comparison ---")
+    bin_01_single = decimal_to_ieee32(0.1)
+    bin_01_double = decimal_to_ieee64(0.1)
+    
+    single_val = ieee_to_decimal(bin_01_single, "single")
+    double_val = ieee_to_decimal(bin_01_double, "double")
+    
+    print(f"0.1 Single precision exact value: {single_val:.20f}")
+    print(f"0.1 Double precision exact value: {double_val:.20f}")
+    print(f"Match: {single_val == double_val}")
