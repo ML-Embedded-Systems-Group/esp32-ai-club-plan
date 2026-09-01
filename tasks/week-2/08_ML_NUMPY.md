@@ -1,9 +1,9 @@
 # The NumPy array: a structure for efficient numerical computation
 
-Member:
+Member: Raunak Panja
 Pair/Reviewer:
-Assigned date:
-Status: Not started
+Assigned date: 01/09/2026
+Status: Started
 
 [Back to the Week 2 task intro](00_TASK_INTRO.md) · [Read the mandatory Alexine guide](https://alexine.rip/lab/fix-your-paper-reading-game.html)
 
