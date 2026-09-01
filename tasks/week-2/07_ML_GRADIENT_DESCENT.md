@@ -1,9 +1,9 @@
 # An overview of gradient descent optimization algorithms
 
 Member: Ritarup Tripathy
-Pair/Reviewer:
+Pair/Reviewer: Pritish Mondal
 Assigned date: 25.08.26
-Status: started
+Status: Started
 
 [Back to the Week 2 task intro](00_TASK_INTRO.md) · [Read the mandatory Alexine guide](https://alexine.rip/lab/fix-your-paper-reading-game.html)
 
