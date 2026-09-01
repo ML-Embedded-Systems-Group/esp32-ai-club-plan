@@ -16,6 +16,7 @@ Never work directly on `main`. Update your local repository first, then create a
 ```bash
 git checkout main
 git pull origin main
+# Choose the branch name that matches your week.
 git checkout -b week1-<task-id>-<your-name>
 ```
 
@@ -23,11 +24,19 @@ Example:
 
 ```bash
 git checkout -b week1-r2-soham
+# Week 2 example: week2-attention-soham
 ```
 
-### 3. Complete Your Task
+### 3. Read the Task Guide
 
-Work only on your assigned task. Add your report, reproduction script, and required evidence.
+Read the guide for your week before starting:
+
+- Week 1: [`tasks/week-1/`](tasks/week-1/)
+- Week 2: [`tasks/week-2/00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md)
+
+### 4. Complete Your Task
+
+Work only on your assigned task. For Week 1, add your report, reproduction script, and required evidence. For Week 2, add only the 400–600 word paper summary; do not add code or downloaded artifacts.
 
 Before committing, check your changes:
 
@@ -38,7 +47,7 @@ git diff
 
 Do not commit credentials, API keys, virtual environments, build outputs, or unnecessary generated files.
 
-### 4. Commit Your Work
+### 5. Commit Your Work
 
 Stage only the files related to your task.
 
@@ -49,7 +58,7 @@ git commit -m "complete R2 gradient descent task"
 
 Use short and meaningful commit messages.
 
-### 5. Update Your Branch
+### 6. Update Your Branch
 
 Before submitting, update your branch with the latest `main`:
 
@@ -65,10 +74,10 @@ git add <resolved-files>
 git rebase --continue
 ```
 
-### 6. Push Your Branch
+### 7. Push Your Branch
 
 ```bash
-git push -u origin week1-<task-id>-<your-name>
+git push -u origin <week>-<task-or-paper-id>-<your-name>
 ```
 
 If you already pushed the branch before rebasing:
@@ -79,7 +88,7 @@ git push --force-with-lease
 
 Do not use plain `--force`.
 
-### 7. Open a Pull Request
+### 8. Open a Pull Request
 
 Open a Pull Request from your branch into `main`.
 
@@ -93,7 +102,7 @@ The Pull Request should include:
 
 Do not merge the Pull Request immediately.
 
-### 8. Pair Review
+### 9. Pair Review
 
 Ask your assigned pair to review the Pull Request.
 
@@ -101,15 +110,16 @@ The reviewer should check:
 
 - [ ] Explanation is written in the member's own words.
 - [ ] Maths or reasoning is correct.
-- [ ] Reproduction script runs successfully.
+- [ ] The Week 1 reproduction script runs successfully, when the task requires one.
 - [ ] Reported output matches the actual output.
 - [ ] Report follows the task requirements.
+- [ ] The Week 2 summary is 400–600 words and contains no code, when applicable.
 - [ ] No unrelated files were changed.
 - [ ] No credentials or generated files were committed.
 
 Fix any review comments and push the changes to the same branch. The Pull Request will update automatically.
 
-### 9. Merge After Review
+### 10. Merge After Review
 
 Merge the Pull Request only after the required review is complete.
 
@@ -118,7 +128,7 @@ After the PR is merged:
 ```bash
 git checkout main
 git pull origin main
-git branch -d week1-<task-id>-<your-name>
+git branch -d <week>-<task-or-paper-id>-<your-name>
 ```
 
 ### Git Workflow Summary
@@ -147,4 +157,4 @@ fix review comments
 merge into main
 ```
 
-**Never push task work directly to `main`. All Week 1 submissions must go through a task branch and Pull Request.**
+**Never push task work directly to `main`. All Week 1 and Week 2 submissions must go through a task branch and Pull Request.**
