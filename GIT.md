@@ -34,6 +34,10 @@ Read the guide for your week before starting:
 
 - Week 1: [`tasks/week-1/`](tasks/week-1/)
 - Week 2: [`tasks/week-2/00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md)
+
+### 4. Complete Your Task
+
+Work only on your assigned task. For Week 1, add your report, reproduction script, and required evidence. For Week 2, add only the 400–600 word paper summary; do not add code or downloaded artifacts.
 - Week 3: [`tasks/week-3/00_TASK_INTRO.md`](tasks/week-3/00_TASK_INTRO.md)
 
 ### 4. Complete Your Task
@@ -115,6 +119,7 @@ The reviewer should check:
 - [ ] The Week 1 reproduction script runs successfully, when the task requires one.
 - [ ] Reported output matches the actual output.
 - [ ] Report follows the task requirements.
+- [ ] The Week 2 summary is 400–600 words and contains no code, when applicable.
 - [ ] The Week 2 summary is 400 to 600 words and contains no code, when applicable.
 - [ ] The Week 3 check prints `PASS` when the member claims job 1 is done.
 - [ ] The Week 3 proposal uses the required headings and one topic from the list.
@@ -161,4 +166,5 @@ fix review comments
 merge into main
 ```
 
+**Never push task work directly to `main`. All Week 1 and Week 2 submissions must go through a task branch and Pull Request.**
 **Never push task work directly to `main`. All Week 1, Week 2, and Week 3 submissions must go through a task branch and Pull Request.**

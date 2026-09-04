@@ -1,6 +1,6 @@
 # The NumPy array: a structure for efficient numerical computation
 
-Member: Raunak Panja
+Member: Raunak Panja and Sourasish Mitra
 Pair/Reviewer:
 Assigned date: 01/09/2026
 Status: Started

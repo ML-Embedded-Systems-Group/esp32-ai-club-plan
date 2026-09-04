@@ -1,5 +1,8 @@
 # ESP32 AI Club Plan
 
+This repository contains the Week 1 task guides and the Week 2 research-paper summary task for the ESP32 AI Club.
+
+The club project studies machine learning on the ESP32-S3. In Week 1, members read a trusted resource, solve a small problem, reproduce the result in code, and write a short report. In Week 2, members read one research paper and write only a short summary.
 This repository contains the task guides for the ESP32 AI Club.
 
 The club project studies machine learning on the ESP32-S3. Week 1 is one assigned idea, maths, a small script, and a report. Week 2 is one 400 to 600 word paper summary and no code. Week 3 is two jobs for every member: match a tiny host model to a golden file, then propose one later experiment.
@@ -54,6 +57,10 @@ Read [`tasks/week-2/00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md) before cho
 | [`10_ML_ADAM.md`](tasks/week-2/10_ML_ADAM.md) | Adam optimization |
 | [`11_ML_TRANSFORMER.md`](tasks/week-2/11_ML_TRANSFORMER.md) | Attention and Transformers |
 
+## Submissions
+
+Week 1 reports and reproduction programs live under `submissions/week-1/<task>_<member>/`. Week 2 has one Markdown summary under `submissions/week-2/<paper>_<member>/` and no code.
+Task guides live under [`tasks/week-1/`](tasks/week-1/) and [`tasks/week-2/`](tasks/week-2/); do not add submission files beside them.
 ## Week 3 tasks
 
 Read [`tasks/week-3/00_TASK_INTRO.md`](tasks/week-3/00_TASK_INTRO.md) first. Every member does both jobs. You can use an AI helper. You must run the commands yourself.
@@ -84,6 +91,7 @@ Use the same layout under `submissions/week-2/` when Week 2 begins. Every pull r
 
 Use the report name and headings listed in your task file. Write the report by hand in your own words.
 
+Week 1 R and H reports must contain at least 350 words. Week 1 E reports must contain at least 300 words. The Week 2 report body must contain 400–600 words.
 Week 1 R and H reports must contain at least 350 words. Week 1 E reports must contain at least 300 words. The Week 2 report body must contain 400 to 600 words. The Week 3 `PROPOSAL.md` body must contain 400 to 600 words.
 
 Each Week 1 report must contain the resource summary, the maths or code evidence, the output, and the unanswered questions.
@@ -108,6 +116,9 @@ Use code blocks for commands and script output. Label each output with the comma
 1. Read the mandatory paper-reading guide in [`tasks/week-2/00_TASK_INTRO.md`](tasks/week-2/00_TASK_INTRO.md).
 2. Choose one paper from the embedded/TinyML or pure-ML list.
 3. Annotate the paper using the guide's prompts.
+4. Write and submit only the 400–600 word summary.
+5. Complete the evidence checklist and ask your pair to review it.
+
 4. Write and submit only the 400 to 600 word summary.
 5. Complete the evidence checklist and ask your pair to review it.
 
@@ -135,6 +146,8 @@ Use code blocks for commands and script output. Label each output with the comma
 ## Timeline
 
 - Week 1: Complete the assigned fundamentals or repository task.
+- Week 2: Submit one 400–600 word research-paper summary; no code.
+- Weeks 3-4: Reproduce the project on the host.
 - Week 2: Submit one 400 to 600 word research-paper summary; no code.
 - Week 3: Match a tiny host model to a golden file, and propose one later experiment (talk in the weekly meet).
 - Weeks 3-4: Reproduce the project on the host (week 3 is the first host slice).
