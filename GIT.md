@@ -25,6 +25,7 @@ Example:
 ```bash
 git checkout -b week1-r2-soham
 # Week 2 example: week2-attention-soham
+# Week 3 example: week3-soham
 ```
 
 ### 3. Read the Task Guide
@@ -37,6 +38,11 @@ Read the guide for your week before starting:
 ### 4. Complete Your Task
 
 Work only on your assigned task. For Week 1, add your report, reproduction script, and required evidence. For Week 2, add only the 400–600 word paper summary; do not add code or downloaded artifacts.
+- Week 3: [`tasks/week-3/00_TASK_INTRO.md`](tasks/week-3/00_TASK_INTRO.md)
+
+### 4. Complete Your Task
+
+Work only on your assigned task. For Week 1, add your report, reproduction script, and required evidence. For Week 2, add only the 400 to 600 word paper summary; do not add code or downloaded artifacts. For Week 3, add `student_forward.py`, `RUNS.md`, and `PROPOSAL.md` under `submissions/week-3/<member>/`.
 
 Before committing, check your changes:
 
@@ -114,6 +120,9 @@ The reviewer should check:
 - [ ] Reported output matches the actual output.
 - [ ] Report follows the task requirements.
 - [ ] The Week 2 summary is 400–600 words and contains no code, when applicable.
+- [ ] The Week 2 summary is 400 to 600 words and contains no code, when applicable.
+- [ ] The Week 3 check prints `PASS` when the member claims job 1 is done.
+- [ ] The Week 3 proposal uses the required headings and one topic from the list.
 - [ ] No unrelated files were changed.
 - [ ] No credentials or generated files were committed.
 
@@ -158,3 +167,4 @@ merge into main
 ```
 
 **Never push task work directly to `main`. All Week 1 and Week 2 submissions must go through a task branch and Pull Request.**
+**Never push task work directly to `main`. All Week 1, Week 2, and Week 3 submissions must go through a task branch and Pull Request.**
